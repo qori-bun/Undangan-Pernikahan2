@@ -248,3 +248,47 @@
                                 </div>
                             </div>
                             
+        <!-- Audio Button -->
+        <button type="button" id="button-music" class="btn bg-light-dark border btn-sm rounded-circle d-none btn-transparent shadow-sm mt-3" aria-label="Change audio" data-offline-disabled="false">
+            <i class="fa-solid fa-circle-pause spin-button"></i>
+        </button>
+    </div>
+
+    <!-- Loading Page -->
+    <div class="loading-page bg-white-black" id="loading" style="opacity: 1;">
+        <div class="d-flex justify-content-center align-items-center vh-100 overflow-y-scroll">
+            <div class="d-flex flex-column width-loading text-center">
+                <img src="./assets/images/placeholder.webp" data-src="./assets/images/icon-192x192.png" data-fetch-img="high" class="img-fluid mb-3 mx-auto object-fit-cover opacity-0" alt="icon" style="width: 3.5rem; height: 3.5rem;">
+                <div class="progress" role="progressbar" style="height: 0.5rem;" aria-label="progress bar">
+                    <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+                </div>
+                <small class="d-none mt-1 text-theme-auto" id="progress-info" style="font-size: 0.8rem;">Booting application...</small>
+                <noscript>
+                    <small class="mt-1 text-danger">Sorry, this invitation requires javascript to work</small>
+                </noscript>
+            </div>
+        </div>
+        <div class="text-center position-fixed w-100" style="bottom: 8%; left: 0;">
+            <div class="d-flex flex-column">
+                <small class="text-secondary">from</small>
+                <small class="text-theme-auto"><i class="fa-brands fa-github me-1"></i>dewanakl</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Image -->
+    <div class="modal fade" id="modal-image" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border border-0">
+                <div class="modal-body p-0">
+                    <div class="d-flex position-absolute top-0 end-0">
+                        <a class="btn d-flex justify-content-center align-items-center bg-overlay-auto p-2 m-1 rounded-circle border shadow-sm z-1" role="button" target="_blank" href="./assets/images/placeholder.webp" id="button-modal-click">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                        <button class="btn d-flex justify-content-center align-items-center bg-overlay-auto p-2 m-1 rounded-circle border shadow-sm z-1" id="button-modal-download">
+                            <i class="fa-solid fa-download"></i>
+                        </button>
+                        <button class="btn d-flex justify-content-center align-items-center bg-overlay-auto p-2 m-1 rounded-circle border shadow-sm z-1" data-bs-dismiss="modal">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </button>
+                    </div>
