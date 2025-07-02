@@ -1,65 +1,252 @@
-# 💌 Template website undangan pernikahan sederhana
+<!doctype html>
+<html lang="id" data-bs-theme="auto">
 
-![Thumbnail](/assets/images/banner.webp)
+<head>
+    <!-- Common Tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Undangan Pernikahan Wahyu dan Riski Secara Online</title>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cef32dbf-f26f-4865-84a9-b85a439c9994/deploy-status)](https://app.netlify.com/sites/ulems/deploys)
-[![Hits](https://dikit.my.id/0b3y8q)](https://cie.my.id)
-[![GitHub repo size](https://img.shields.io/github/repo-size/dewanakl/undangan?color=brightgreen)](https://shields.io)
-[![GitHub License](https://img.shields.io/github/license/dewanakl/undangan?color=brightgreen)](https://shields.io)
+    <!-- SEO Tag -->
+    <meta name="author" content="dewanakl">
+    <meta name="language" content="id">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow, max-image-preview:large">
+    <meta name="title" content="Website Undangan Pernikahan Wahyu dan Riski Secara Online">
+    <meta name="description" content="Website Undangan Pernikahan Wahyu dan Riski Secara Online">
+    <meta name="keywords" content="undangan, wedding, undangan digital, undangan online, wedding invitation, template undangan, template undangan pernikahan, undangan pernikahan, template undangan online, wedding invitation github, template website, template website undangan pernikahan">
+    <meta property="og:title" content="Website Undangan Pernikahan Wahyu dan Riski Secara Online">
+    <meta property="og:description" content="Website Undangan Pernikahan Wahyu dan Riski Secara Online">
+    <meta property="og:keywords" content="undangan, wedding, undangan digital, undangan online, wedding invitation, template undangan, template undangan pernikahan, undangan pernikahan, template undangan online, wedding invitation github, template website, template website undangan pernikahan">
+    <meta property="og:image" content="https://ulems.my.id/assets/images/bg.webp">
+    <meta property="og:image:secure_url" content="https://ulems.my.id/assets/images/bg.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:alt" content="Website Undangan Pernikahan Wahyu dan Riski Secara Online">
+    <meta property="og:image:width" content="980">
+    <meta property="og:image:height" content="980">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:url" content="https://ulems.my.id">
+    <meta property="og:site_name" content="Website Undangan Pernikahan Wahyu dan Riski Secara Online">
 
-## 🚀 Demo
-Untuk kamu yang ingin melihat demo terlebih dahulu:
+    <!-- Appearance -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Website Undangan Pernikahan Wahyu dan Riski Secara Online">
+    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="dark light">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="canonical" href="https://ulems.my.id/">
+    <link rel="shortcut icon" type="image/x-icon" href="https://ulems.my.id/assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="192x192" href="https://ulems.my.id/assets/images/icon-192x192.png">
+    <link rel="icon" type="image/x-icon" href="https://ulems.my.id/assets/favicon.ico">
 
-[https://ulems.my.id/?to=Teman teman semua](https://ulems.my.id/?to=Teman%20teman%20semua)
+    <!-- Preconnect CDN -->
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 
-## 📦 Documentation
+    <!-- Preload Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" integrity="sha256-zRgmWB5PK4CvTx4FiXsxbHaYRBBjz/rvu97sOC7kzXI=" crossorigin="anonymous" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha256-NfRUfZNkERrKSFA0c1a8VmCplPDYtpTYj5lQmKe1R/o=" crossorigin="anonymous" as="script">
 
-- Jalankan: `npm install` serta `npm run dev`.
-- Ubah isi dari index.html sesuai yang kamu mau.
-- Jika tidak ingin menggunakan `komentar` bisa hapus `data-url` dan `data-key` pada body index.
-- Sesuaikan `data-url` pada body index dan dashboard sesuai url backend (jika deploy sendiri).
-- Sesuaikan juga `data-key` dengan access key pada dashboard.
-- Jika mau menggunakan gif, dapatkan tenor key di [developers.google.com/tenor](https://developers.google.com/tenor/guides/quickstart)
-- Waktu deploy: `npm run build:public` dan folder public yang akan di deploy.
-- Self deployment backend bisa lihat dibawah atau ingin coba gratis pada trial api.
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap">
 
-> Undangan ini hanya HTML, CSS, dan JavaScript seperti biasa. NPM digunakan untuk build file js agar dieksekusi secara langsung (bukan tipe module lagi).
+    <!-- Dependencies CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" integrity="sha256-zRgmWB5PK4CvTx4FiXsxbHaYRBBjz/rvu97sOC7kzXI=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/guest.css">
 
-> Jika kamu punya pertanyaan, silakan gunakan fitur `discussions` agar teman-teman yang lain juga mengetahuinya.
+    <!-- Dependencies JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha256-NfRUfZNkERrKSFA0c1a8VmCplPDYtpTYj5lQmKe1R/o=" crossorigin="anonymous"></script>
+    <script src="./dist/guest.js"></script>
+</head>
 
-## 🔥 Deployment API
+<!-- If you're not using comments, you can remove the data-key and data-url attributes, and ignore dashboard.html. -->
+<!-- If you're not using a song, you can remove the data-audio attribute. -->
+<!-- Change the time to time-data (according to that format) -->
+<!-- Set data-confetti to 'false' if you're not using confetti. Only works when comments are disabled. -->
+<!-- You can use GitHub release files (guest.css, guest.js, admin.css, admin.js) directly without compilation. -->
+<!-- <html lang="id" data-bs-theme="auto"> ['auto', 'dark', 'light'] -->
+<!-- Recommend use 'data-src' in img tag -->
 
-- Video\
-    otw
+<body data-key="d9faced3377732b0edf19e90d1bde0cd5de04801c75eb41743" data-url="https://api.ulems.my.id/" data-audio="./assets/music/pure-love-304010.mp3" data-confetti="true" data-time="2024-01-01 09:30:00">
 
-- Presentation
-    [https://docs.google.com/presentation](https://docs.google.com/presentation/d/1EY2YmWdZUI7ASoo0f2wvU7ec_Yt0uZanYa8YLbfNysk/edit)
+    <!-- Root Invitation -->
+    <div class="row m-0 p-0 opacity-0" id="root">
 
-## ⏰ Trial API
-Untuk kamu yang ingin mencoba secara gratis:
+        <!-- Desktop mode -->
+        <div class="sticky-top vh-100 d-none d-sm-block col-sm-5 col-md-6 col-lg-7 col-xl-8 col-xxl-9 overflow-y-hidden m-0 p-0">
+            <div class="position-relative bg-white-black d-flex justify-content-center align-items-center vh-100">
+                <div class="d-flex position-absolute w-100 h-100">
+                    <div class="position-relative overflow-hidden vw-100">
+                        <div class="position-absolute h-100 w-100 slide-desktop" style="opacity: 0;">
+                            <img src="./assets/images/placeholder.webp" data-src="https://picsum.photos/1000/1000?random=7" alt="bg" class="bg-cover-home" style="mask-image: none; opacity: 30%;">
+                        </div>
+                        <div class="position-absolute h-100 w-100 slide-desktop" style="opacity: 0;">
+                            <img src="./assets/images/placeholder.webp" data-src="https://picsum.photos/1000/1000?random=8" alt="bg" class="bg-cover-home" style="mask-image: none; opacity: 30%;">
+                        </div>
+                        <div class="position-absolute h-100 w-100 slide-desktop" style="opacity: 0;">
+                            <img src="./assets/images/placeholder.webp" data-src="https://picsum.photos/1000/1000?random=9" alt="bg" class="bg-cover-home" style="mask-image: none; opacity: 30%;">
+                        </div>
+                    </div>
+                </div>
 
-[https://trial.ulems.my.id](https://trial.ulems.my.id)
+                <div class="text-center p-4 bg-overlay-auto rounded-5">
+                    <h2 class="font-esthetic mb-4" style="font-size: 2rem;">Wahyu &amp; Riski</h2>
+                    <p class="m-0" style="font-size: 1rem;">Rabu, 15 Maret 2023</p>
+                </div>
+            </div>
+        </div>
 
-## ⚙️ Tech stack
+        <!-- Smartphone mode -->
+        <div class="col-sm-7 col-md-6 col-lg-5 col-xl-4 col-xxl-3 m-0 p-0">
+            <!-- Main Content -->
+            <main data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-root-margin="25% 0% 0% 0%" data-bs-smooth-scroll="true" tabindex="0">
 
-- Bootstrap 5.3.7
-- AOS 2.3.4
-- Fontawesome 6.7.2
-- Canvas Confetti 1.9.3
-- Google Fonts
-- Vanilla JS
+                <!-- Home -->
+                <section id="home" class="bg-light-dark position-relative overflow-hidden p-0 m-0">
+                    <img src="./assets/images/placeholder.webp" data-src="./assets/images/bg.webp" alt="bg" class="position-absolute opacity-25 top-50 start-50 translate-middle bg-cover-home">
 
-## 🎨 Credit
-All visual assets in this project are sourced from Pixabay.
+                    <div class="position-relative text-center bg-overlay-auto" style="background-color: unset;">
+                        <h1 class="font-esthetic pt-5 pb-4 fw-medium" style="font-size: 2.25rem;">Undangan Pernikahan</h1>
 
-## 🤝 Contributing
+                        <img src="./assets/images/placeholder.webp" data-src="./assets/images/bg.webp" alt="bg" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer">
 
-I'm very open to those of you who want to contribute to the undangan!
+                        <h2 class="font-esthetic my-4" style="font-size: 2.25rem;">Wahyu &amp; Riski</h2>
+                        <p class="my-2" style="font-size: 1.25rem;">Rabu, 15 Maret 2023</p>
 
-## 🐞 Security Vulnerabilities
+                        <button class="btn btn-outline-auto btn-sm shadow rounded-pill px-3 py-1" style="font-size: 0.825rem;">
+                            <i class="fa-solid fa-calendar-check me-2"></i>Save Google Calendar
+                        </button>
 
-If you find any security vulnerabilities in this undangan, please email DKL via [dewanakretarta29@gmail.com](mailto:dewanakretarta29@gmail.com).
+                        <div class="d-flex justify-content-center align-items-center mt-4 mb-2">
+                            <div class="mouse-animation border border-secondary border-2 rounded-5 px-2 py-1 opacity-50">
+                                <div class="scroll-animation rounded-4 bg-secondary"></div>
+                            </div>
+                        </div>
 
-## 📜 License
+                        <p class="pb-4 m-0 text-secondary" style="font-size: 0.825rem;">Scroll Down</p>
+                    </div>
+                </section>
 
-Undangan is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+                <!-- Wave Separator -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-svg no-gap-bottom">
+                    <path fill="currentColor" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,106.7C384,117,480,171,576,165.3C672,160,768,96,864,96C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                </svg>
+
+                <!-- Bride -->
+                <section class="bg-white-black text-center" id="bride">
+                    <h2 class="font-arabic py-4 m-0" style="font-size: 2rem;">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h2>
+                    <h2 class="font-esthetic py-4 m-0" style="font-size: 2rem;">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
+                    <p class="pb-4 px-2 m-0" style="font-size: 0.95rem;">Tanpa mengurangi rasa hormat, kami mengundang Anda untuk berkenan menghadiri acara pernikahan kami:</p>
+
+                    <!-- Love animation -->
+                    <div class="position-relative">
+                        <div class="position-absolute" style="top: 0%; right: 5%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="opacity-50" data-time="500" data-class="animate-love" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="overflow-x-hidden pb-4">
+
+                        <div data-aos="fade-right" data-aos-duration="2000" class="pb-1">
+                            <img src="./assets/images/placeholder.webp" data-src="./assets/images/cowo.webp" alt="cowo" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer">
+                            <h2 class="font-esthetic m-0" style="font-size: 2.125rem;">Nama Wahyu Siapa</h2>
+                            <p class="mt-3 mb-1" style="font-size: 1.25rem;">Putra ke-1</p>
+                            <p class="mb-0" style="font-size: 0.95rem;">Bapak lorem ipsum</p>
+                            <p class="mb-0" style="font-size: 0.95rem;">dan</p>
+                            <p class="mb-0" style="font-size: 0.95rem;">Ibu lorem ipsum</p>
+                        </div>
+
+                        <!-- Love animation -->
+                        <div class="position-relative">
+                            <div class="position-absolute" style="top: 0%; left: 5%;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="opacity-50" data-time="2000" data-class="animate-love" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <h2 class="font-esthetic mt-4" style="font-size: 4.5rem;">&amp;</h2>
+
+                        <!-- Love animation -->
+                        <div class="position-relative">
+                            <div class="position-absolute" style="top: 0%; right: 5%;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="opacity-50" data-time="3000" data-class="animate-love" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div data-aos="fade-left" data-aos-duration="2000" class="pb-1">
+                            <img src="./assets/images/placeholder.webp" data-src="./assets/images/cewe.webp" alt="cewe" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto cursor-pointer">
+                            <h2 class="font-esthetic m-0" style="font-size: 2.125rem;">Nama Riski Siapa</h2>
+                            <p class="mt-3 mb-1" style="font-size: 1.25rem;">Putri ke-2</p>
+                            <p class="mb-0" style="font-size: 0.95rem;">Bapak lorem ipsum</p>
+                            <p class="mb-0" style="font-size: 0.95rem;">dan</p>
+                            <p class="mb-0" style="font-size: 0.95rem;">Ibu lorem ipsum</p>
+                        </div>
+                    </div>
+
+                    <!-- Love animation -->
+                    <div class="position-relative">
+                        <div class="position-absolute" style="top: 0%; left: 5%;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="opacity-50" data-time="2500" data-class="animate-love" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Wave Separator -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-svg no-gap-bottom">
+                    <path fill="currentColor" fill-opacity="1" d="M0,192L40,181.3C80,171,160,149,240,149.3C320,149,400,171,480,165.3C560,160,640,128,720,128C800,128,880,160,960,186.7C1040,213,1120,235,1200,218.7C1280,203,1360,149,1400,122.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+                </svg>
+
+                <!-- Firman Allah Subhanahu Wa Ta'ala -->
+                <section class="bg-light-dark pt-2 pb-4">
+                    <div class="container text-center">
+                        <h2 class="font-esthetic pt-2 pb-1 m-0" style="font-size: 2rem;">Allah Subhanahu Wa Ta'ala berfirman</h2>
+
+                        <div class="bg-theme-auto mt-4 p-3 shadow rounded-4" data-aos="fade-down" data-aos-duration="2000">
+                            <p class="p-1 mb-2" style="font-size: 0.95rem;">Dan segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat (kebesaran Allah).</p>
+                            <p class="m-0 p-0 text-theme-auto" style="font-size: 0.95rem;">QS. Adh-Dhariyat: 49</p>
+                        </div>
+
+                        <div class="bg-theme-auto mt-4 p-3 shadow rounded-4" data-aos="fade-down" data-aos-duration="2000">
+                            <p class="p-1 mb-2" style="font-size: 0.95rem;">dan sesungguhnya Dialah yang menciptakan pasangan laki-laki dan perempuan,</p>
+                            <p class="m-0 p-0 text-theme-auto" style="font-size: 0.95rem;">QS. An-Najm: 45</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Love Story -->
+                <section class="bg-light-dark pt-2 pb-4">
+                    <div class="container">
+                        <div class="bg-theme-auto rounded-5 shadow p-3">
+                            <h2 class="font-esthetic text-center py-2 mb-2" style="font-size: 2.125rem;">Kisah Cinta</h2>
+
+                            <!-- You can remove this -->
+                            <div id="video-love-stroy" class="position-relative rounded-4 mb-1 pb-0" data-src="./assets/video/265501_tiny.mp4" data-vid-class="w-100 rounded-4 shadow-sm m-0 p-0">
+                                <div class="position-absolute d-flex flex-column justify-content-center align-items-center top-50 start-50 translate-middle w-100 h-100 bg-overlay-auto rounded-4 z-3" id="video-love-stroy-loading">
+                                    <div class="progress w-25" role="progressbar" style="height: 0.5rem;" aria-label="progress bar">
+                                        <div class="progress-bar" id="progress-bar-video-love-stroy" style="width: 0%;"></div>
+                                    </div>
+                                    <small class="mt-1 text-theme-auto bg-theme-auto py-0 px-2 rounded-4" id="progress-info-video-love-stroy" style="font-size: 0.7rem;"></small>
+                                </div>
+                            </div>
+
+                            <div class="position-relative">
+                                <div class="position-absolute d-flex justify-content-center align-items-center top-50 start-50 translate-middle w-100 h-100 bg-overlay-auto z-3" sty
